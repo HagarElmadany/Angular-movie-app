@@ -1,0 +1,31 @@
+h1{ 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
+    color: red;
+  }
+
+.peopleimg{
+    border: 3px dashed #9c0f0f;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px #9c0f0f;
+}
+
+.peopleimg:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.pname{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pname:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}

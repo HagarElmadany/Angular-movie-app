@@ -1,0 +1,42 @@
+h1{ 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
+    color: red;
+  }
+
+.card-img-top:hover{
+    opacity: 0.8;
+}
+
+.card-movie:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-movie{
+    height: 400px;
+    width: 250px;
+    background-color: #222;
+    color: white;
+   
+}
+
+.card-title {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+.card-text.overview{
+    height: 50px;
+    overflow: hidden;
+}
+
+
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}

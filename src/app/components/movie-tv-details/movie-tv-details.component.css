@@ -1,0 +1,17 @@
+h1{
+    color: red;
+}
+
+
+img{
+    border-radius: 10px;
+    box-shadow: 0 0 5px red;
+}
+
+img:hover{
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,17 @@
+<div class="container mt-4 ">
+    <h1 class="text text-center mb-3 ">Trending</h1>
+    <div class="row d-flex flex-wrap">
+        <div *ngFor="let trend of allTrending; let index = index" class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card card-movie shadow " (click)="goToDetail(trend.id, trend.media_type)">
+                <img [src]="'https://image.tmdb.org/t/p/w500' + trend.poster_path" class="card-img-top" alt="{{ trend.title || trend.name }} ">
+                <div class="card-body">
+                    <h5 class="card-title">{{ trend.title || trend.name }}</h5>
+                    <p class="card-text">type:<span class="text-danger mx-2">{{ trend.media_type }}</span></p>
+                    <p class="card-text overview">{{ trend.overview }}</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  

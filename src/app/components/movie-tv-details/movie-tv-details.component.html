@@ -1,0 +1,30 @@
+<div *ngIf="mediaDetails; else loading">
+  <div class="container my-5">
+    <div class="row align-items-center">
+
+      <div class="col-12 col-md-4 mb-4 mb-md-0 text-center">
+        <img 
+          [src]="'https://image.tmdb.org/t/p/w500' + mediaDetails.poster_path" 
+          alt="Poster" 
+          class="img-fluid" 
+        />
+      </div>
+
+      <div class="col-12 col-md-8">
+        <h1>{{ mediaDetails.title || mediaDetails.name }}</h1>
+        <p><strong>Release Date:</strong> {{ mediaDetails.release_date || mediaDetails.first_air_date }}</p>
+        <p><strong>Overview:</strong> {{ mediaDetails.overview }}</p>
+        <p><strong>Rating:</strong> {{ mediaDetails.vote_average }} ⭐⭐⭐⭐⭐</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="text-center my-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</ng-template>
