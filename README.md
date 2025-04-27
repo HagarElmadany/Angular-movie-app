@@ -47,6 +47,6 @@ ng generate component component-name
 To get started, clone the repository and install the dependencies.
 
 ```bash
-git clone https://github.com/yourusername/movie-app.git
+git clone https://github.com/HagarElmadany/Angular-movie-app.git
 cd movie-app
 npm install
